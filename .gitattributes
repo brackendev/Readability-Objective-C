@@ -1,0 +1,7 @@
+*.pbxproj -crlf -diff -merge
+*.xib -crlf -diff -merge
+*.nib -crlf -diff -merge
+
+# Disable line ending conversions for all files
+* -text
+
