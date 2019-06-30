@@ -234,7 +234,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1020;
-				ORGANIZATIONNAME = "brackendev";
+				ORGANIZATIONNAME = brackendev;
 				TargetAttributes = {
 					C940358019E9880300388A4B = {
 						CreatedOnToolsVersion = 6.0.1;
@@ -447,7 +447,7 @@
 				INFOPLIST_FILE = "Readability-Objective-C Example/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "dk.mmw.Readability-Objective-C-Example";
+				PRODUCT_BUNDLE_IDENTIFIER = "brackendev.Readability-Objective-C-Example";
 				PRODUCT_NAME = "Readability-Objective-C Example";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Readability-Objective-C Example-Bridging-Header.h";
@@ -466,7 +466,7 @@
 				INFOPLIST_FILE = "Readability-Objective-C Example/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "dk.mmw.Readability-Objective-C-Example";
+				PRODUCT_BUNDLE_IDENTIFIER = "brackendev.Readability-Objective-C-Example";
 				PRODUCT_NAME = "Readability-Objective-C Example";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Readability-Objective-C Example-Bridging-Header.h";
