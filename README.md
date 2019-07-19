@@ -5,16 +5,8 @@ Readability-Objective-C
 
 **Metrics to determine readability and comprehension difficulty for contemporary English text.**
 
-* [iOS](https://en.wikipedia.org/wiki/IOS) reference platform.
+* [iOS](https://en.wikipedia.org/wiki/IOS) reference platform, 9.3 minimum version.
 * Example app and tests included.
-
-## Installation
-
-Git clone this repository. [objC-syllable-counter](https://github.com/brackendev/objC-syllable-counter.git) submodule is required, therefore be sure to clone like this:
-
-````bash
-git clone --recursive https://github.com/brackendev/Readability-Objective-C.git
-````
 
 ## Metrics Included
 
@@ -25,9 +17,39 @@ git clone --recursive https://github.com/brackendev/Readability-Objective-C.git
 * [Gunning Fog Index](http://en.wikipedia.org/wiki/Gunning_fog_index)
 * [SMOG Grade](http://en.wikipedia.org/wiki/SMOG)
 
-## Usage
+## Installation
 
-See the [view controller](https://github.com/brackendev/Readability-Objective-C/blob/master/Readability-Objective-C%20Example/Readability-Objective-C%20Example/Classes/ViewController.m) in the example app.
+* CocoaPods is the easiest way to use this project. Add the following to your project Podfile:
+
+    ````Ruby
+    pod 'Readability', :git => 'https://github.com/brackendev/Readability-Objective-C.git'
+    ````
+
+## Example Usage
+
+1. Import it:
+
+    ```Objective-C
+    #import <Readability-Objective-C/Readability.h>
+    ```
+
+2. Use it:
+    
+    ```Objective-C
+    [Readability automatedReadabilityIndexForString:@"Text"];
+    [Readability colemanLiauIndexForString:@"Text"];
+    [Readability fleschKincaidGradeLevelForString:@"Text"];
+    [Readability fleschReadingEaseForString:@"Text"];
+    [Readability gunningFogScoreForString:@"Text"];
+    [Readability smogGradeForString:@"Text"];
+    ```
+
+## Acknowledgements
+
+This project makes use of the following third-party libraries:
+
+* [objC-syllable-counter](https://github.com/brackendev/objC-syllable-counter.git)
+* [RegexKitLite](http://regexkit.sourceforge.net/RegexKitLite/)
 
 ## Ports
 
