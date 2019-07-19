@@ -19,11 +19,11 @@ Readability-Objective-C
 
 ## Installation
 
-* CocoaPods is the easiest way to use this project. Add the following to your project Podfile:
+CocoaPods is the easiest way to use this project. Add the following to your project Podfile:
 
-    ````Ruby
-    pod 'Readability', :git => 'https://github.com/brackendev/Readability-Objective-C.git'
-    ````
+````Ruby
+pod 'Readability', :git => 'https://github.com/brackendev/Readability-Objective-C.git'
+````
 
 ## Example Usage
 
