@@ -44,6 +44,8 @@ pod 'Readability-Objective-C', :git => 'https://github.com/brackendev/Readabilit
     [Readability gunningFogScoreForString:@"Text"];
     [Readability smogGradeForString:@"Text"];
     ```
+    
+Note: Also see the [example view controller](https://github.com/brackendev/Readability-Objective-C/blob/master/Example/Readability-Objective-C/ReadabilityViewController.m).
 
 ## Acknowledgements
 
