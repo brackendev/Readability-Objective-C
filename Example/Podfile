@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'Readability-Objective-C_Example' do
+  pod 'Readability-Objective-C', :path => '../'
+
+  target 'Readability-Objective-C_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
