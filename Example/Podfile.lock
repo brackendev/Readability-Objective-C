@@ -1,0 +1,24 @@
+PODS:
+  - Readability-Objective-C (0.1.0):
+    - RegexKitLite (= 4.0)
+  - RegexKitLite (4.0)
+
+DEPENDENCIES:
+  - Readability-Objective-C (from `../`)
+  - RegexKitLite (= 4.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - RegexKitLite
+
+EXTERNAL SOURCES:
+  Readability-Objective-C:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Readability-Objective-C: cec8fd5a46b488a1c2ce9df5e2ddba6073e47d4d
+  RegexKitLite: c0e4c12e6e7de0769f3a3ed679f0f61604170661
+
+PODFILE CHECKSUM: bf5969facca2ccec09c599714437a21e6234cebe
+
+COCOAPODS: 1.7.4

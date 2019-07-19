@@ -1,13 +1,12 @@
 use_frameworks!
 
-platform :ios, '8.0'
+platform :ios, '9.3'
 
 target 'Readability-Objective-C_Example' do
   pod 'Readability-Objective-C', :path => '../'
+  pod 'RegexKitLite', '4.0'
 
   target 'Readability-Objective-C_Tests' do
     inherit! :search_paths
-
-    
   end
 end

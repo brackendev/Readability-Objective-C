@@ -1,9 +1,9 @@
 //
 //  ReadabilityViewController.h
-//  Readability-Objective-C
+//  Readability-Objective-C Example
 //
-//  Created by bracken-dev on 07/19/2019.
-//  Copyright (c) 2019 bracken-dev. All rights reserved.
+//  Created by brackendev.
+//  Copyright (c) 2014-2019 brackendev. All rights reserved.
 //
 
 @import UIKit;

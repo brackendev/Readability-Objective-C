@@ -1,29 +1,72 @@
 //
 //  ReadabilityViewController.m
-//  Readability-Objective-C
+//  Readability-Objective-C Example
 //
-//  Created by bracken-dev on 07/19/2019.
-//  Copyright (c) 2019 bracken-dev. All rights reserved.
+//  Created by brackendev.
+//  Copyright (c) 2014-2019 brackendev. All rights reserved.
 //
 
 #import "ReadabilityViewController.h"
+#import "Readability.h"
 
-@interface ReadabilityViewController ()
+@interface ReadabilityViewController () <UITextViewDelegate>
+
+@property (nonatomic, weak) IBOutlet UIActivityIndicatorView *activityIndicator;
+@property (nonatomic, weak) IBOutlet UITextView *textView;
+@property (nonatomic, weak) IBOutlet UILabel *automatedReadabilityIndexLabel;
+@property (nonatomic, weak) IBOutlet UILabel *colemanLiauIndexLabel;
+@property (nonatomic, weak) IBOutlet UILabel *fleschReadingEaseLabel;
+@property (nonatomic, weak) IBOutlet UILabel *fleschKincaidGradeLevelLabel;
+@property (nonatomic, weak) IBOutlet UILabel *gunningFogScoreLabel;
+@property (nonatomic, weak) IBOutlet UILabel *smogGradeLabel;
 
 @end
 
 @implementation ReadabilityViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+
+    [self textViewDidChange:self.textView];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - UITextViewDelegate
+
+- (void)textViewDidChange:(UITextView *)textView {
+    if (textView.text.length) {
+        [self.activityIndicator startAnimating];
+
+        NSString *testText = self.textView.text;
+
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(void) {
+            NSDecimalNumber *automatedReadabilityIndex = [Readability automatedReadabilityIndexForString:testText][@"Score"];
+            NSDecimalNumber *colemanLiauIndex = [Readability colemanLiauIndexForString:testText];
+            NSDecimalNumber *fleschKincaidGradeLevel = [Readability fleschKincaidGradeLevelForString:testText];
+            NSDecimalNumber *fleschReadingEase = [Readability fleschReadingEaseForString:testText][@"Score"];
+            NSDecimalNumber *gunningFogScore = [Readability gunningFogScoreForString:testText];
+            NSDecimalNumber *smogGrade = [Readability smogGradeForString:testText];
+
+            dispatch_async(dispatch_get_main_queue(), ^(void) {
+                [self.activityIndicator stopAnimating];
+
+                [self.automatedReadabilityIndexLabel setText:[NSString stringWithFormat:@"%@", automatedReadabilityIndex]];
+                [self.colemanLiauIndexLabel setText:[NSString stringWithFormat:@"%@", colemanLiauIndex]];
+                [self.fleschKincaidGradeLevelLabel setText:[NSString stringWithFormat:@"%@", fleschKincaidGradeLevel]];
+                [self.fleschReadingEaseLabel setText:[NSString stringWithFormat:@"%@", fleschReadingEase]];
+                [self.gunningFogScoreLabel setText:[NSString stringWithFormat:@"%@", gunningFogScore]];
+                [self.smogGradeLabel setText:[NSString stringWithFormat:@"%@", smogGrade]];
+            });
+        });
+    } else {
+        [self.activityIndicator stopAnimating];
+
+        [self.automatedReadabilityIndexLabel setText:nil];
+        [self.colemanLiauIndexLabel setText:nil];
+        [self.fleschKincaidGradeLevelLabel setText:nil];
+        [self.fleschReadingEaseLabel setText:nil];
+        [self.gunningFogScoreLabel setText:nil];
+        [self.smogGradeLabel setText:nil];
+    }
 }
 
 @end

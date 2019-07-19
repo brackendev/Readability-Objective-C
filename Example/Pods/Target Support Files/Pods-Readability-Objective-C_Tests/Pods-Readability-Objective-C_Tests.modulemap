@@ -1,0 +1,6 @@
+framework module Pods_Readability_Objective_C_Tests {
+  umbrella header "Pods-Readability-Objective-C_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
