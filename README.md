@@ -1,6 +1,7 @@
 Readability-Objective-C
 =======================
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/d9b21f69a0c54ee08897e745e6285443)](https://www.codacy.com/app/brackendev/Readability-Objective-C?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=brackendev/Readability-Objective-C&amp;utm_campaign=Badge_Grade)
+[![Build Status](https://travis-ci.com/brackendev/Readability-Objective-C.svg?branch=master)](https://travis-ci.com/brackendev/Readability-Objective-C)
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fbrackendev%2FReadability-Objective-C.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fbrackendev%2FReadability-Objective-C?ref=badge_shield)
 
 **Metrics to determine readability and comprehension difficulty for contemporary English text.**
