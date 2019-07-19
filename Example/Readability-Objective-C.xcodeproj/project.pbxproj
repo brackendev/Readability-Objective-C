@@ -247,7 +247,7 @@
 			attributes = {
 				CLASSPREFIX = Readability;
 				LastUpgradeCheck = 1020;
-				ORGANIZATIONNAME = "bracken-dev";
+				ORGANIZATIONNAME = brackendev;
 				TargetAttributes = {
 					6003F589195388D20070C39A = {
 						ProvisioningStyle = Manual;
