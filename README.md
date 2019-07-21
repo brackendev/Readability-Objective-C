@@ -26,6 +26,12 @@ CocoaPods is the easiest way to use this project. Add the following to your proj
 pod 'Readability-Objective-C', :git => 'https://github.com/brackendev/Readability-Objective-C.git'
 ````
 
+It is a good idea to specifiy the version or commit. For example:
+
+```Ruby
+pod 'Readability-Objective-C', :git => 'https://github.com/brackendev/Readability-Objective-C.git', commit => '47d2b475ba7f4b3169321d61df552dd2a912cee9'
+```
+
 ## Example Usage
 
 1. Import it:
@@ -45,7 +51,7 @@ pod 'Readability-Objective-C', :git => 'https://github.com/brackendev/Readabilit
     [Readability smogGradeForString:@"Text"];
     ```
     
-Note: Also see the [example view controller](https://github.com/brackendev/Readability-Objective-C/blob/master/Example/Readability-Objective-C/ReadabilityViewController.m).
+Note: See the [example view controller](https://github.com/brackendev/Readability-Objective-C/blob/master/Example/Readability-Objective-C/ReadabilityViewController.m).
 
 ## Acknowledgements
 
