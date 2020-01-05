@@ -4,7 +4,7 @@ Readability-Objective-C
 [![Build Status](https://travis-ci.com/brackendev/Readability-Objective-C.svg?branch=master)](https://travis-ci.com/brackendev/Readability-Objective-C)
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fbrackendev%2FReadability-Objective-C.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fbrackendev%2FReadability-Objective-C?ref=badge_shield)
 
-**Metrics to determine readability and comprehension difficulty for contemporary English text.**
+**Determine readability and comprehension difficulty for contemporary English text.**
 
 * [iOS](https://en.wikipedia.org/wiki/IOS) reference platform, 9.3 minimum version.
 * Example app and tests included.
