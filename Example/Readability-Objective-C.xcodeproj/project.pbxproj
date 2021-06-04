@@ -64,7 +64,7 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A7A3553056F0FAA0194D28A2 /* Pods-Readability-Objective-C_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Readability-Objective-C_Example.release.xcconfig"; path = "Target Support Files/Pods-Readability-Objective-C_Example/Pods-Readability-Objective-C_Example.release.xcconfig"; sourceTree = "<group>"; };
 		B994C1B85AF3F71748181712 /* Pods_Readability_Objective_C_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Readability_Objective_C_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C9CEA7C922E21195001ACD0C /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
+		C9CEA7C922E21195001ACD0C /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C9CEA7E722E23266001ACD0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D5AA556CC0D45BA7CB067457 /* Pods_Readability_Objective_C_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Readability_Objective_C_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC984075AC100B4F9C7FA49F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
